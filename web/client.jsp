@@ -11,9 +11,6 @@
     <title>仓库货物管理系统-用户端</title>
 </head>
 <body>
-<%
-    String action = request.getParameter("action");
-%>
 <table align="center" width="1280" height="720" border="1">
     <tr>
         <td height="50" colspan="2">

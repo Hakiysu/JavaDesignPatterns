@@ -11,9 +11,6 @@
     <title>仓库货物管理系统-服务端</title>
 </head>
 <body>
-<%
-    String action = request.getParameter("action");
-%>
 <table align="center" width="1280" height="720" border="1">
     <tr>
         <td height="50" colspan="2">
@@ -23,8 +20,8 @@
     </tr>
     <tr>
         <td align="center" width="100" height="300">
-            <a href="clientFrame/makeNewOrder.jsp">仓库管理</a><br>
-            <a href="clientFrame/checkOrder.jsp">订单管理</a><br>
+            <a href="serverFrame/repoManager.jsp">仓库管理</a><br>
+            <a href="serverFrame/orderManager.jsp">订单管理</a><br>
         </td>
         <td align="center" width="800">
             <%@ include file="clientFrame/checkOrder.jsp" %>

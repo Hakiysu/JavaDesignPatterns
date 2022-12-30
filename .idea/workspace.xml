@@ -6,51 +6,36 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f77dbef3-ccf7-4e3b-b3b1-4ce16149e10e" name="变更" comment="First version.">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/account/loginCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/account/registerCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/orderManager/makeOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sql/sqlManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/accountManager/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/accountManager/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/client.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/clientFrame/checkFactoryRepo.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/clientFrame/checkOrder.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/clientFrame/cilentAction.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/clientFrame/makeNewOrder.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/clientFrame/top.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/server.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/serverFrame/orderManager.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/serverFrame/repoManager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56b68f4d-f81d-40a0-babb-0e2fc45dffbd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/56b68f4d-f81d-40a0-babb-0e2fc45dffbd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="f77dbef3-ccf7-4e3b-b3b1-4ce16149e10e" name="变更" comment="add some function">
+      <change afterPath="$PROJECT_DIR$/src/orderManager/makeNewRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/orderManager/updateRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSJMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSJMS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agent/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/agent/Agent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agent/CilentFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/agent/CilentFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agent/DeliverGoods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/agent/DeliverGoods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agent/DeliverMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/agent/DeliverMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agent/Express.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/agent/Express.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agent/ServerFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/agent/ServerFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/agent/Tradition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/agent/Tradition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coke/Coca_Cola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/coke/Coca_Cola.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coke/Coca_ColaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/coke/Coca_ColaFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coke/Coke.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/coke/Coke.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coke/CokeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/coke/CokeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coke/Pepsi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/coke/Pepsi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/coke/PepsiFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/coke/PepsiFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/Coca_ColaCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/company/Coca_ColaCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/PepsiCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/company/PepsiCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/customer/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customer/OrderBuidler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/customer/OrderBuidler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/loginFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/loginFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/message/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/message/Recipient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/message/Recipient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sqlconnect/logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sqlconnect/orderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/archive/orderManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/agent/Agent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/agent/CilentFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/agent/DeliverGoods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/agent/DeliverMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/agent/Express.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/agent/ServerFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/agent/Tradition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/coke/Coca_Cola.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/coke/Coca_ColaFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/coke/Coke.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/coke/CokeFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/coke/Pepsi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/coke/PepsiFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/company/Coca_ColaCompany.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/company/PepsiCompany.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/customer/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/customer/OrderBuidler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/logger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/loginFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/message/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/message/Recipient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/archive/orderManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/client.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/server.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/server.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/serverFrame/repoManager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/serverFrame/repoManager.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +204,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672406434494</updated>
-      <workItem from="1672406435604" duration="24678000" />
+      <workItem from="1672406435604" duration="26422000" />
     </task>
     <task id="LOCAL-00001" summary="First version.">
       <created>1672415482999</created>
@@ -235,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672416119826</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add some function">
+      <created>1672433598090</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672433598090</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +258,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First version." />
-    <option name="LAST_COMMIT_MESSAGE" value="First version." />
+    <MESSAGE value="add some function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some function" />
   </component>
 </project>
