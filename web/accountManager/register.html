@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">用户注册</h1>
+<form action="/registerCheck" method="post">
+    <table align="center" border="1" width="20%">
+        <tr>
+            <th>用户名</th>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <th>密码</th>
+            <td><input type="password" name="password"></td>
+        </tr>
+        <tr>
+            <th>确认密码</th>
+            <td><input type="password" name="password2"></td>
+        </tr>
+        <tr>
+            <th>职业</th>
+            <td>
+                <input type="radio" name="accountLevel" value="1">用户<br>
+                <input type="radio" name="accountLevel" value="2">厂家
+            </td>
+        </tr>
+        <tr>
+            <th>电话号码</th>
+            <td><input type="text" name="telephone"></td>
+        </tr>
+        <tr>
+            <th>地址</th>
+            <td><input type="text" name="address"></td>
+        </tr>
+        <tr>
+            <th>电子邮箱</th>
+            <td><input type="text" name="email" size="30"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="注册"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

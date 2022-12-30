@@ -1063,93 +1063,150 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <column id="308" parent="304" name="goodName">
+    <column id="308" parent="304" name="goodID">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="309" parent="304" name="goodName">
       <DasType>char(16)|0s</DasType>
       <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="309" parent="304" name="column_2">
-      <DasType>int|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="310" parent="305" name="orderID">
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="311" parent="305" name="orderMaker">
-      <DasType>char(128)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="312" parent="305" name="orderReceiveFactory">
-      <DasType>char(128)|0s</DasType>
-      <NotNull>1</NotNull>
+    <column id="310" parent="304" name="goodFactory">
+      <DasType>char(64)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="313" parent="305" name="orderItem">
-      <DasType>char(128)|0s</DasType>
+    <column id="311" parent="304" name="goodPrice">
+      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="314" parent="305" name="orderStatus">
+    <column id="312" parent="304" name="goodAmount">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="315" parent="305" name="orderSendMethod">
-      <DasType>int|0s</DasType>
+    <column id="313" parent="304" name="goodLastEditTime">
+      <DasType>char(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <index id="316" parent="305" name="PRIMARY">
-      <ColNames>orderID</ColNames>
+    <index id="314" parent="304" name="PRIMARY">
+      <ColNames>goodID</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="317" parent="305" name="orderID">
-      <ColNames>orderID</ColNames>
+    <index id="315" parent="304" name="goodID">
+      <ColNames>goodID</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="318" parent="305" name="PRIMARY">
+    <key id="316" parent="304" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="319" parent="305" name="orderID">
+    <key id="317" parent="304" name="goodID">
+      <UnderlyingIndexName>goodID</UnderlyingIndexName>
+    </key>
+    <column id="318" parent="305" name="orderID">
+      <DasType>char(32)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="319" parent="305" name="orderMaker">
+      <DasType>char(128)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="320" parent="305" name="orderReceiveFactory">
+      <DasType>char(128)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="321" parent="305" name="orderContent">
+      <DasType>char(128)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="322" parent="305" name="orderStatus">
+      <DasType>char(16)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="323" parent="305" name="orderSendMethod">
+      <DasType>char(16)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="324" parent="305" name="orderSendAddress">
+      <DasType>char(128)|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <index id="325" parent="305" name="PRIMARY">
+      <ColNames>orderID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="326" parent="305" name="orderID">
+      <ColNames>orderID</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="327" parent="305" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="328" parent="305" name="orderID">
       <UnderlyingIndexName>orderID</UnderlyingIndexName>
     </key>
-    <column id="320" parent="306" name="username">
+    <column id="329" parent="306" name="username">
       <DasType>char(32)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="321" parent="306" name="passwd">
+    <column id="330" parent="306" name="passwd">
       <DasType>char(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="322" parent="306" name="accountLevel">
+    <column id="331" parent="306" name="accountLevel">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="323" parent="307" name="username">
+    <column id="332" parent="306" name="telephone">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="333" parent="306" name="email">
+      <DasType>char(32)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="334" parent="306" name="address">
+      <DasType>char(64)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="335" parent="307" name="username">
       <DasType>char(16)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="324" parent="307" name="sendTime">
+    <column id="336" parent="307" name="sendTime">
       <DasType>char(16)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="325" parent="307" name="accountlevel">
+    <column id="337" parent="307" name="accountlevel">
       <DasType>char(16)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="326" parent="307" name="sqlCommand">
+    <column id="338" parent="307" name="sqlCommand">
       <DasType>char(128)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
