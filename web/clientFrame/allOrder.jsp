@@ -15,7 +15,6 @@
   String dburl = "jdbc:mysql://localhost:3306/javasjmsdata?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
   String dbuser = "root";
   String dbpassword = "hakiysu@MYSQLDB233";
-  String content = request.getParameter("content");
   try {
     Connection con = DriverManager.getConnection(dburl, dbuser, dbpassword);
     Statement sql = con.createStatement();

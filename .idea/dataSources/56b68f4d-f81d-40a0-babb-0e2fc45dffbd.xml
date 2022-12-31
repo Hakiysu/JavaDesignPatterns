@@ -1131,7 +1131,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>4</Position>
     </column>
     <column id="322" parent="305" name="orderStatus">
-      <DasType>char(16)|0s</DasType>
+      <DasType>char(128)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
@@ -1177,7 +1177,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>3</Position>
     </column>
     <column id="332" parent="306" name="telephone">
-      <DasType>int|0s</DasType>
+      <DasType>char(64)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>

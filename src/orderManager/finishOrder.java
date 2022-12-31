@@ -1,6 +1,5 @@
 package orderManager;
 
-import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -15,12 +14,12 @@ import java.sql.Statement;
 @WebServlet(name = "finishOrder", value = "/finishOrder")
 public class finishOrder extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doPost(request, response);
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setCharacterEncoding("GBK");
         PrintWriter out = response.getWriter();
         String dburl = "jdbc:mysql://localhost:3306/javasjmsdata?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
@@ -32,10 +31,8 @@ public class finishOrder extends HttpServlet {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(dburl, dbuser, dbpassword);
             Statement sql = con.createStatement();
-            String updateSql = null;
             String orderStatus="已签收";
-            updateSql = "update orderstatus set orderStatus = '" + orderStatus +  "' where orderID = '" + orderID + "'";
-            sql.executeUpdate(updateSql);
+            sql.executeUpdate("update orderstatus set orderStatus = '" + orderStatus +  "' where orderID = '" + orderID + "'");
             out.print("<script language='javascript'>alert('订单操作已提交！');window.location.href='/serverFrame/orderManager.jsp';</script>");
         } catch (Exception e) {
             e.printStackTrace();

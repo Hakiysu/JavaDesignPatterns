@@ -1,6 +1,5 @@
 package repoManager;
 
-import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -17,12 +16,12 @@ import java.util.Date;
 @WebServlet(name = "makeNewRepo", value = "/makeNewRepo")
 public class makeNewRepo extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         doPost(request, response);
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setCharacterEncoding("GBK");
         PrintWriter out = response.getWriter();
         String dburl = "jdbc:mysql://localhost:3306/javasjmsdata?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
@@ -39,11 +38,11 @@ public class makeNewRepo extends HttpServlet {
             Connection con = DriverManager.getConnection(dburl, dbuser, dbpassword);
             Statement sql = con.createStatement();
             int goodID = 0;
-            String sqlQuery = "SELECT count(*) FROM goodstatus";
+            String sqlQuery = "select goodID from goodstatus order by goodID desc limit 1";
             sql.executeQuery(sqlQuery);
             ResultSet rs = sql.executeQuery(sqlQuery);
             while (rs.next()) {
-                goodID = rs.getInt("count(*)")+1;
+                goodID = rs.getInt("goodID")+1;
             }
             String insertSql = "insert into goodstatus (goodID, goodName,goodFactory,goodPrice,goodAmount,goodLastEditTime) values ('" + goodID + "','" + goodName + "','" + goodFactory + "','" + goodPrice + "','" + goodAmount + "','" + goodLastEditTime + "')";
             sql.executeUpdate(insertSql);
