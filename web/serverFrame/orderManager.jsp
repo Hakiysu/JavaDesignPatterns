@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>仓库货物管理系统-厂家端-订单管理</title>
 </head>
 <body>
 <table align="center" border="1" width="1280" height="720">

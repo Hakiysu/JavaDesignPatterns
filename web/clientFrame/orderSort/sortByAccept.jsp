@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <title>仓库货物管理系统-用户端-订单查询-已接单</title>
 </head>
 <body>
 <table align="center" border="1" width="1280" height="720">
@@ -18,6 +19,7 @@
     </tr>
     <tr>
         <td align="center">
+            <p>订单查询-已接单</p>
             <%
                 String dburl = "jdbc:mysql://localhost:3306/javasjmsdata?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
                 String dbuser = "root";

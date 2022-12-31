@@ -1,4 +1,4 @@
-package orderManager;
+package repoManager;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
@@ -8,13 +8,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Date;
-import java.util.Random;
 
-@WebServlet(name = "updateRepo", value = "/updateRepo")
-public class updateRepo extends HttpServlet {
+@WebServlet(name = "deleteRepo", value = "/deleteRepo")
+public class deleteRepo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
@@ -29,15 +27,11 @@ public class updateRepo extends HttpServlet {
         String dbpassword = "hakiysu@MYSQLDB233";
         //get the order information from the request
         String goodID = request.getParameter("goodID");
-        String goodAmount = request.getParameter("goodAmount");
-        String goodPrice = request.getParameter("goodPrice");
-        String goodLastEditTime = String.valueOf(new Date());
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(dburl, dbuser, dbpassword);
             Statement sql = con.createStatement();
-            String updateSql = "update goodstatus set goodAmount = '" + goodAmount + "', goodPrice = '" + goodPrice + "', goodLastEditTime = '" + goodLastEditTime + "' where goodID = '" + goodID + "'";
-            sql.executeUpdate(updateSql);
+            sql.executeUpdate("delete from goodstatus where goodID = '" + goodID + "'");
             out.print("<script language='javascript'>alert('仓库操作已提交！');window.location.href='/serverFrame/repoManager.jsp';</script>");
         } catch (Exception e) {
             e.printStackTrace();

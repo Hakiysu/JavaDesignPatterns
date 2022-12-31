@@ -3,7 +3,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>用户端-新建订单</title>
+    <title>仓库货物管理系统-用户端-新建订单</title>
 </head>
 <body>
 <table align="center" border="1"  width="1280" height="720">
@@ -17,6 +17,7 @@
         </td>
         <td width="1280">
             <%---make new order---%>
+            <p>警告：订单提交后无法撤销，请谨慎操作！</p>
             <form action="/makeOrder" method="post">
                 <table>
                     <tr>

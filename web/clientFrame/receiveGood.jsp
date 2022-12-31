@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+  <title>仓库货物管理系统-用户端-订单签收</title>
 </head>
 <body>
 <table align="center" border="1" width="1280" height="720">

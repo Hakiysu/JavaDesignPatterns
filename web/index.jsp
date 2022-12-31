@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>主页-登录</title>
+    <title>仓库货物管理系统-登录前页面</title>
 </head>
 <body>
 <h1 align="center">仓库货物管理系统</h1>

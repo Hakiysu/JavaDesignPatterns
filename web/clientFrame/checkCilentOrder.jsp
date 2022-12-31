@@ -2,7 +2,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>用户端-检查订单</title>
+    <title>仓库货物管理系统-用户端-订单查询</title>
 </head>
 <body>
 <table align="center" border="1" width="1280" height="720">
@@ -11,6 +11,7 @@
     </tr>
     <tr>
         <td align="center" >
+            <p>订单查询-全部订单</p>
             <%@ include file="allOrder.jsp" %>
         </td>
     </tr>

@@ -9,16 +9,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>仓库货物管理系统-厂家端-仓库管理</title>
 </head>
 <body>
 <table align="center" border="1" width="1280" height="720">
     <tr>
-        <th>厂家仓库</th>
+        <th>厂家个人仓库</th>
         <th>仓库管理</th>
     </tr>
     <tr>
-        <td rowspan="3" width="1280" >
+        <td rowspan="4" width="1280">
             <%
                 String dburl = "jdbc:mysql://localhost:3306/javasjmsdata?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
                 String dbuser = "root";
@@ -53,6 +53,7 @@
                 }
             %>
         </td>
+    </tr>
     <tr>
         <td width="640">
             <form action="/makeNewRepo" method="post">
@@ -86,7 +87,7 @@
                 <h2>更新仓库</h2>
                 <table>
                     <tr>
-                        <td width="100">物品ID</td>
+                        <td width="100">仓库ID</td>
                         <td><input type="text" name="goodID" value=""/>
                         </td>
                     </tr>
@@ -98,7 +99,24 @@
                         <td width="100">变更价格为</td>
                         <td><input type="text" name="goodPrice" value=""/></td>
                     </tr>
-                    <input type="hidden" name="username" value="<%=session.getAttribute("username")%>"/>
+                    <tr>
+                        <td colspan="2" align="center"><input type="submit" value="提交"></td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td width="640">
+            <%---make new order---%>
+            <form action="/deleteRepo" method="post">
+                <h2>删除仓库</h2>
+                <table>
+                    <tr>
+                        <td width="100">仓库ID</td>
+                        <td><input type="text" name="goodID" value=""/>
+                        </td>
+                    </tr>
                     <tr>
                         <td colspan="2" align="center"><input type="submit" value="提交"></td>
                     </tr>
