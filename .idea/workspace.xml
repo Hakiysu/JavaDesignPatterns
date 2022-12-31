@@ -7,34 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f77dbef3-ccf7-4e3b-b3b1-4ce16149e10e" name="变更" comment="add some function">
-      <change afterPath="$PROJECT_DIR$/src/orderManager/makeNewRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/orderManager/updateRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/account/exit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/orderManager/finishOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/orderManager/updateOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/clientFrame/allOrder.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/clientFrame/allSendingOrder.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/clientFrame/orderSort/sortByAccept.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/clientFrame/orderSort/sortByMakeDeal.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/clientFrame/orderSort/sortByReceived.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/clientFrame/orderSort/sortBySending.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/clientFrame/topFunc.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/serverFrame/checkServerOrder.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/agent/Agent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/agent/CilentFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/agent/DeliverGoods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/agent/DeliverMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/agent/Express.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/agent/ServerFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/agent/Tradition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/coke/Coca_Cola.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/coke/Coca_ColaFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/coke/Coke.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/coke/CokeFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/coke/Pepsi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/coke/PepsiFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/company/Coca_ColaCompany.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/company/PepsiCompany.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/customer/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/customer/OrderBuidler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/logger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/loginFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/message/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/message/Recipient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/archive/orderManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orderManager/makeNewRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/orderManager/makeNewRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orderManager/updateRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/orderManager/updateRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sql/sqlManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/accountManager/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/accountManager/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/client.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/client.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/clientFrame/checkOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/clientFrame/checkCilentOrder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/clientFrame/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/clientFrame/receiveGood.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/server.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/server.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/serverFrame/orderManager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/serverFrame/orderManager.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/serverFrame/repoManager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/serverFrame/repoManager.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +76,7 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
@@ -95,8 +89,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\coding\repo\JavaSJMS\web\clientFrame" />
+      <recent name="D:\coding\repo\JavaSJMS\web\serverFrame" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\coding\repo\JavaSJMS\web\clientFrame\orderSort" />
       <recent name="D:\coding\repo\JavaSJMS\web\accountManager" />
       <recent name="D:\coding\repo\JavaSJMS\src" />
     </key>
@@ -204,7 +200,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672406434494</updated>
-      <workItem from="1672406435604" duration="26422000" />
+      <workItem from="1672406435604" duration="36066000" />
     </task>
     <task id="LOCAL-00001" summary="First version.">
       <created>1672415482999</created>
@@ -227,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672433598090</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add some function">
+      <created>1672435313293</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672435313293</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

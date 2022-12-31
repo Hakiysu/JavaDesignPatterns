@@ -10,7 +10,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.Date;
 
 @WebServlet(name = "makeNewRepo", value = "/makeNewRepo")
 public class makeNewRepo extends HttpServlet {
@@ -28,18 +30,24 @@ public class makeNewRepo extends HttpServlet {
         String dbpassword = "hakiysu@MYSQLDB233";
         //get the order information from the request
         String goodFactory = request.getParameter("username");
-        String goodID = request.getParameter("goodID");
         String goodName = request.getParameter("goodName");
         String goodAmount = request.getParameter("goodAmount");
         String goodPrice = request.getParameter("goodPrice");
-        String goodLastEditTime = String.valueOf(System.currentTimeMillis());
+        String goodLastEditTime = String.valueOf(new Date());
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(dburl, dbuser, dbpassword);
             Statement sql = con.createStatement();
+            int goodID = 0;
+            String sqlQuery = "SELECT count(*) FROM goodstatus";
+            sql.executeQuery(sqlQuery);
+            ResultSet rs = sql.executeQuery(sqlQuery);
+            while (rs.next()) {
+                goodID = rs.getInt("count(*)")+1;
+            }
             String insertSql = "insert into goodstatus (goodID, goodName,goodFactory,goodPrice,goodAmount,goodLastEditTime) values ('" + goodID + "','" + goodName + "','" + goodFactory + "','" + goodPrice + "','" + goodAmount + "','" + goodLastEditTime + "')";
             sql.executeUpdate(insertSql);
-            out.print("<script language='javascript'>alert('仓库操作已提交！');window.location.href='/serverFrame/makeNewOrder.jsp';</script>");
+            out.print("<script language='javascript'>alert('仓库操作已提交！');window.location.href='/serverFrame/repoManager.jsp';</script>");
         } catch (Exception e) {
             e.printStackTrace();
         }

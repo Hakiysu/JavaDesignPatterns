@@ -1,18 +1,24 @@
-<%@ page import="java.sql.*" %>
+<%@ page import="java.sql.*" %><%--
+  Created by IntelliJ IDEA.
+  User: Hakiysu
+  Date: 2022/12/31
+  Time: 7:35
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>用户端-检查订单</title>
 </head>
 <body>
 <%
     String dburl = "jdbc:mysql://localhost:3306/javasjmsdata?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
     String dbuser = "root";
     String dbpassword = "hakiysu@MYSQLDB233";
+    String content = "已发货";
     try {
         Connection con = DriverManager.getConnection(dburl, dbuser, dbpassword);
         Statement sql = con.createStatement();
-        ResultSet rs = sql.executeQuery("SELECT * FROM orderstatus where orderMaker='" + session.getAttribute("username") + "'");
+        ResultSet rs = sql.executeQuery("SELECT * FROM orderstatus where orderMaker='" + session.getAttribute("username") + "'and orderStatus like '" + content + "%'");
         out.print("<Table Border>");
         out.print("<tr>");
         out.print("<th width=100>" + "订单号");

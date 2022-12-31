@@ -1,20 +1,19 @@
 package orderManager;
 
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.Date;
-import java.util.Random;
 
-@WebServlet(name = "updateRepo", value = "/updateRepo")
-public class updateRepo extends HttpServlet {
+@WebServlet(name = "updateOrder", value = "/updateOrder")
+public class updateOrder extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
@@ -28,17 +27,22 @@ public class updateRepo extends HttpServlet {
         String dbuser = "root";
         String dbpassword = "hakiysu@MYSQLDB233";
         //get the order information from the request
-        String goodID = request.getParameter("goodID");
-        String goodAmount = request.getParameter("goodAmount");
-        String goodPrice = request.getParameter("goodPrice");
-        String goodLastEditTime = String.valueOf(new Date());
+        String orderID = request.getParameter("orderID");
+        String orderStatus = request.getParameter("orderStatus");
+        String trackingNumber = request.getParameter("trackingNumber");
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(dburl, dbuser, dbpassword);
             Statement sql = con.createStatement();
-            String updateSql = "update goodstatus set goodAmount = '" + goodAmount + "', goodPrice = '" + goodPrice + "', goodLastEditTime = '" + goodLastEditTime + "' where goodID = '" + goodID + "'";
+            String updateSql = null;
+            if (orderStatus.equals("已接单")) {
+                updateSql = "update orderstatus set orderStatus = '" + orderStatus + "' where orderID = '" + orderID + "'";
+            }
+            else if (orderStatus.equals("已发货")) {
+                updateSql = "update orderstatus set orderStatus = '" + orderStatus + ":" + trackingNumber + "' where orderID = '" + orderID + "'";
+            }
             sql.executeUpdate(updateSql);
-            out.print("<script language='javascript'>alert('仓库操作已提交！');window.location.href='/serverFrame/repoManager.jsp';</script>");
+            out.print("<script language='javascript'>alert('订单操作已提交！');window.location.href='/serverFrame/orderManager.jsp';</script>");
         } catch (Exception e) {
             e.printStackTrace();
         }

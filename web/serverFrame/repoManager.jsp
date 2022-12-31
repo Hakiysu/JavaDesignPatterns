@@ -15,10 +15,10 @@
 <table align="center" border="1" width="1280" height="720">
     <tr>
         <th>厂家仓库</th>
-        <th>新建订单详情</th>
+        <th>仓库管理</th>
     </tr>
     <tr>
-        <td width="1280">
+        <td rowspan="3" width="1280" >
             <%
                 String dburl = "jdbc:mysql://localhost:3306/javasjmsdata?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
                 String dbuser = "root";
@@ -54,14 +54,10 @@
             %>
         </td>
     <tr>
-        <td>
+        <td width="640">
             <form action="/makeNewRepo" method="post">
+                <h2>新建仓库</h2>
                 <table>
-                    <tr>
-                        <td width="100">物品ID</td>
-                        <td><input type="text" name="goodID" value=""/>
-                        </td>
-                    </tr>
                     <tr>
                         <td width="100">物品名称</td>
                         <td><input type="text" name="goodName" value=""/>
@@ -82,9 +78,12 @@
                 </table>
             </form>
         </td>
-        <td width="1280">
+    </tr>
+    <tr>
+        <td width="640">
             <%---make new order---%>
             <form action="/updateRepo" method="post">
+                <h2>更新仓库</h2>
                 <table>
                     <tr>
                         <td width="100">物品ID</td>
@@ -109,7 +108,7 @@
     </tr>
     </tr>
     <tr>
-        <td colspan="2" align="center"><a href="/client.jsp">返回用户端管理页面</a></td>
+        <td colspan="2" align="center"><a href="/server.jsp">返回服务端管理页面</a></td>
     </tr>
 </table>
 </body>
