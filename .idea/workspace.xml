@@ -10,13 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f77dbef3-ccf7-4e3b-b3b1-4ce16149e10e" name="变更" comment="add repo delete func,fix some title name">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/56b68f4d-f81d-40a0-babb-0e2fc45dffbd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/56b68f4d-f81d-40a0-babb-0e2fc45dffbd.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/account/updateUserData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/accountManager/showUserData.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/clientFrame/editClientUserData.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/serverFrame/editServerUserData.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/exit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/exit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orderManager/finishOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/orderManager/finishOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repoManager/deleteRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repoManager/deleteRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repoManager/makeNewRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repoManager/makeNewRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repoManager/updateRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repoManager/updateRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/loginCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/account/loginCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/client.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/client.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/server.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/server.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2JdSO4oLCnJ7OwAPIPiHB28ufzi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -60,7 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/coding/repo/JavaSJMS/web/clientFrame",
+    "last_opened_file_path": "D:/coding/repo/JavaSJMS/web/serverFrame",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,10 +85,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\coding\repo\JavaSJMS\web\clientFrame" />
       <recent name="D:\coding\repo\JavaSJMS\web\serverFrame" />
+      <recent name="D:\coding\repo\JavaSJMS\web\clientFrame" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\coding\repo\JavaSJMS\web\clientFrame" />
       <recent name="D:\coding\repo\JavaSJMS\web\clientFrame\orderSort" />
       <recent name="D:\coding\repo\JavaSJMS\web\accountManager" />
       <recent name="D:\coding\repo\JavaSJMS\src" />
@@ -192,7 +198,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672406434494</updated>
-      <workItem from="1672406435604" duration="40000000" />
+      <workItem from="1672406435604" duration="41055000" />
+      <workItem from="1675876264177" duration="644000" />
+      <workItem from="1676391884905" duration="110000" />
+      <workItem from="1677206991097" duration="155000" />
+      <workItem from="1677207189185" duration="14599000" />
     </task>
     <task id="LOCAL-00001" summary="First version.">
       <created>1672415482999</created>
@@ -243,7 +253,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672450935927</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add repo delete func,fix some title name">
+      <created>1672452347640</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672452347640</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add repo delete func,fix some title name">
+      <created>1672453299666</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672453299666</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

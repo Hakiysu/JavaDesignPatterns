@@ -36,6 +36,7 @@
             <a href="clientFrame/makeNewOrder.jsp">新建订单</a><br>
             <a href="clientFrame/checkCilentOrder.jsp">查询订单</a><br>
             <a href="clientFrame/receiveGood.jsp">订单签收</a><br>
+            <a href="clientFrame/editClientUserData.jsp">账户数据修改</a><br>
         </td>
         <td align="center" width="800">
             <%@ include file="clientFrame/allOrder.jsp" %>

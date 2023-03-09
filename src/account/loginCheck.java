@@ -44,7 +44,7 @@ public class loginCheck extends HttpServlet {
             e.printStackTrace();
         }
         if (accountLevel == 0) {
-            out.print("<script language='javascript'>alert('登录错误！用户不存在或者密码错误。');window.location.href='/index.jsp';</script>");
+            out.print("<script language='javascript'>alert('登录失败！用户不存在或者密码错误。');window.location.href='/index.jsp';</script>");
         }
         else if (accountLevel == 1) {
             session.setAttribute("username", username);

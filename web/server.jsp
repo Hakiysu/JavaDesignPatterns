@@ -14,7 +14,7 @@
 <table align="center" width="1280" height="720" border="1">
     <tr>
         <td height="50" colspan="2">
-            <h1 align="center">仓库货物管理系统-服务端</h1>
+            <h1 align="center">仓库货物管理系统-厂家端</h1>
             您好，<%=session.getAttribute("username")%>，欢迎您使用仓库货物管理系统！<br>
             <button onclick="myFunction()">退出</button>
             <script>
@@ -35,6 +35,7 @@
         <td align="center" width="100" height="300">
             <a href="serverFrame/repoManager.jsp">仓库管理</a><br>
             <a href="serverFrame/orderManager.jsp">订单管理</a><br>
+            <a href="serverFrame/editServerUserData.jsp">账户数据修改</a><br>
         </td>
         <td align="center" width="800">
             <%@ include file="serverFrame/checkServerOrder.jsp" %>
